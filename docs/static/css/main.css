@@ -1,0 +1,454 @@
+html, body {
+    background: #e1e1e1;
+    text-align: center;
+    margin: 0;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+a { outline: none;}
+
+#cnt-wrp {
+    margin: 40px auto;
+    width: 1000px;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 0px 25px #ccc;
+    -moz-box-shadow: 0px 0px 25px #ccc;
+    -webkit-box-shadow: 0px 0px 25px #ccc;
+}
+    #cnt {
+        width: 980px;
+        margin: auto 10px;
+        text-align: left}
+        small a{
+            color:#000;
+            text-decoration:none}
+            small a:hover{
+                text-decoration:underline}
+#hd {
+    background: #f1f1f1;
+    position: relative;
+    width: 980px;
+    height: 100px;
+    border-bottom: 2px solid #ccc;
+}
+    #top-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 790px;
+        height: 100px;
+    }
+        #top-menu ul {
+            list-style-type: none;
+            width: 780px;
+            margin: 0;
+            padding: 0;
+            height: 100px;
+
+        }
+            #top-menu ul li {
+                float: left;
+                width: 115px;
+                height: 100px;
+                overflow: hidden;
+                vertical-align: middle;
+                border-right: 1px solid #fff;
+            }
+                #top-menu ul li a{
+                    line-height: 100px;
+                    background: #f1f1f1;
+                    display: block;
+                    width: 115px;
+                    text-decoration: none;
+                    font-size: 12pt;
+                    color: black;
+                    text-align: center;
+                    text-shadow: #ccc 0px 0px 2px;
+                }
+                    #top-menu ul li.last a { 
+                        border-right: 1px solid #fff;
+                    }            
+                    #top-menu ul li a:hover, #top-menu ul li.active a{
+                        background: url(../img/btn.png) -100px 0;
+                        border-bottom: 3px solid red;
+                        color: white;
+                        text-shadow: black 0px 0px 3px;
+                    }
+    #hd-logo {
+        width: 280px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+        #hd-logo a {
+            font-family: "CenturyOldst TL", "Times New Roman", serif;
+            display: block;
+            line-height: 100px;
+            text-align: center;
+            height: 100px;
+            width: 280px;
+            font-size: 24pt;
+            font-weight: bold;
+            font-style: italic;
+            color: #2d983e;
+            text-shadow: #ccc 0px 0px 5px;
+        }
+    #lang {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 16px;
+    }
+        #lang ul {
+            text-align: right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+            #lang ul li {
+                float: right;
+                line-height: 20px;
+                margin:  0 5px;
+            }
+            #lang ul li a, #lang ul li a:hover, #lang ul li a:visited {
+                display: block;
+                color: black;
+                font-weight: bold;
+                width: 16px;
+                height: 0;
+                padding-top: 11px;
+                text-align: center;
+                font-size: 8pt;
+                text-decoration: none;
+                line-height: 20px;
+                overflow: hidden;
+            }
+                a#lv {
+                    background: url(../img/lv.gif);
+                }
+                a#en {
+                    background: url(../img/us.gif);
+                }
+    #body {
+        margin-top: 10px;
+    }
+
+    h1 a, h1 a:hover, h1 a:visited, h2 a, h2a:hover, h2 a:visited {
+        color: black;
+        text-decoration: none;
+    }
+    .sidebar {
+        width: 400px;
+        float: right;
+    }
+        .sidebar-block {
+            margin: 20px 10px;
+        }
+            .sidebar-block p {
+                font-size: 10pt;
+                margin: auto 20px;
+            }
+            .sidebar-block h2 {
+                font-weight: bold;
+                font-size: 10pt;
+                border-bottom: 1px dotted #ccc;
+            }            
+        #search-box {
+            margin: 0;
+            background: #ccc;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 3px solid white;
+            border-top: 3px solid white;
+        }
+            input#search {
+                border: 1px;
+                padding: 2px;
+                line-height: 20px;
+                font-size: 10pt;
+                font-family: Arial, Tahoma, sans-serif;
+            }
+            input#btn {
+
+                text-shadow: black 0px 0px 3px;
+                border: none;
+                padding: 2px 20px;
+                line-height: 20px;
+                font-size: 10pt;
+                font-family: Arial, Tahoma, sans-serif;   
+                color: white;
+                background: url(../img/btn.png) center -40px;             
+            }
+    .page {
+        float: left;
+        width: 570px;
+        padding-top: 10px;
+    }
+        .page h1, .page h2{
+            clear: both;
+            background: url(../img/h.png) 0 2px no-repeat;
+            padding-left: 20px;
+            font-size: 14pt;
+            font-weight: normal;
+            border-bottom: 1px solid #e1e1e1;
+        }
+        .page p {
+            font-size: 10pt;
+            line-height: 200%;
+        }
+        .page ol {
+            margin: 0;
+            font-size: 10pt;
+        }
+            .page ol li a, .page ol li a:visited{
+                font-size: 10pt;
+                text-decoration: none;
+                color: black;
+            }
+            .page ol li a:hover {
+                text-decoration: underline;
+            }
+        #icon {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 10px 10px 10px 0;
+            border-bottom: 3px solid red;
+        }
+            #icon a {
+                display: block;
+                width: 100px;
+                height: 100px;
+                background-position: center;
+            }
+        ul#gallery, ul#related {
+            margin: 0;
+            padding: 0;
+        }
+            ul#gallery li, ul#related li {
+                margin: 0 10px 10px 0;
+                display: block;
+                float: left;
+                width: 100px;
+                height: 100px;
+                border-bottom: 3px solid red;
+                background-position: center;
+            }
+                ul#gallery li a, ul#related li a {
+                    display: block;
+                    width: 100px;
+                    height: 0;
+                    padding-top: 100px;
+                    overflow: hidden;
+                }
+        #banner {
+            margin-top: 10px;
+            width: 980px;
+            height: 300px;
+            position: relative;
+        }
+            #banner-img {
+                width: 980px;
+                height: 300px;
+                position: absolute;
+                overflow: hidden;
+                left: 0;
+                top: 0;
+            }
+            #banner-txt {
+                z-index: 900;
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: #fff;
+                font-size: 30pt;
+                width: 400px;
+                border-left: 1px solid #fff;
+                height: 300px;
+                background: url(../img/bnr_back.png);
+            }
+                #banner-txt p {
+                    margin: 80px 20px;
+                    text-shadow: #000 1px 1px 5px;
+                }
+        #small-banner{
+            margin-top: 10px;
+            width: 980px;
+            height: 50px;
+            position: relative;            
+            background: #f1f1f1;
+        }
+            #small-banner-txt {
+                z-index: 950;
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: #fff;
+                font-size: 12pt;
+                width: 780px;
+                height: 50px;
+                padding: 0;
+
+            }
+                #small-banner-txt p {
+                    color: black;
+                    line-height: 50px;
+                    text-shadow: #ccc 1px 1px 5px;
+                    margin: 0 20px;
+                }
+                    #small-banner-txt p span {
+                        font-family: 'CenturyOldst TL', 'Times New Roman', serif;
+                        font-weight: bold;
+                        font-size: 18pt;
+                        text-decoration: underline;
+                        font-style: italic;
+                        width: 200px;
+                        float: left;
+                        display: block;
+                        color: #2D983E;
+                    }
+        #banner-lang {
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+            width: 100px;
+            height: 50px;
+        }
+            #banner-lang ul {
+                height: 50px;
+                text-align: right;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+                #banner-lang ul li {
+                    float: right;
+                    margin:  20px 5px;                    
+                }
+                #banner-lang ul li a, #banner-lang ul li a:hover, #banner-lang ul li a:visited {
+                    display: block;
+                    color: black;
+                    font-weight: bold;
+                    width: 16px;
+                    height: 0;
+                    padding-top: 11px;
+                    text-align: center;
+                    font-size: 8pt;
+                    text-decoration: none;
+                    line-height: 20px;
+                    overflow: hidden;
+                }
+                    a#lv {
+                        background: url(../img/lv.gif);
+                    }
+                    a#en {
+                        background: url(../img/us.gif);
+                    }
+    #first-blocks {
+        width: 980px;
+        background: url(../img/3blocks.gif);
+    }
+        .block {
+            width: 290px;
+            float: left;
+            padding-bottom: 10px;
+        }
+            .block h2 {
+                width: 250px;
+                font-size: 12pt;
+                margin: 15px 0;
+                padding-left: 25px;
+                background: url(../img/h.png) 3px 0 no-repeat;
+                border-bottom: 1px solid #e1e1e1;
+            }
+            .block p {
+                margin: 0 20px 0 0;
+                font-size: 10pt;
+            }
+                .block p.readmore {
+                    font-size: 8pt;
+                    text-align: right;
+                }
+                .block p.readmore a, .block p.readmore a:visited {
+                    text-decoration: none;
+                    color: #000;
+                }
+            #first-icon {
+                float: left; 
+                border-bottom: 3px solid red; 
+                margin: 3px 10px 5px 0;
+                width: 100px; 
+                height: 75px;
+                background-position: center;
+            }
+                #first-icon a {
+                    display: block;
+                    width: 100px; 
+                    height: 0;
+                    overflow: hidden;
+                    padding-top: 75px;                    
+                }
+        .extra {
+            float: right;
+            width: 400px;
+        }
+            .extra h2 {
+                margin: 15px 20px;
+            }
+            .extra p {
+                margin: 0 20px;
+                font-size: 10pt;
+            }
+    .break {
+        height: 1px;
+        clear: both;
+    }
+            
+     #ft {
+        margin-top: 8px;
+        width: 980px;
+        height: 50px;
+        background: #e4e4e4;
+        border-top: 3px solid red;
+     }       
+        #ft ul {
+            line-height: 50px;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+            #ft ul li {
+                border-right: 1px solid #fff;
+                width: 110px;
+                display: inline;
+                font-size: 10pt;
+                text-align: center;
+                line-height: 50px;
+                float: left;
+            }
+                #ft ul li a { 
+                    display: block;
+                    line-height: 50px;
+                    text-decoration: none;
+                    color: #000;
+                    font-weight: bold;
+                }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
